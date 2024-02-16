@@ -1,13 +1,16 @@
+/*univeral rule for page with the * */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/*selects body color*/
 body {
     background-color: #d9dcd6;
 }
 
+/*sets general rule for header like background block color, font color, and font used*/
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +18,18 @@ body {
     color: #ffffff;
 }
 
+
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/*solely for "seo" in header for slightly different color*/
 .header h1 .seo {
     color: #d9dcd6;
 }
 
+/*makes navigation components move to the right side, give different fonts, and have its own font size independent to the header*/
 .navbar {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,10 +38,12 @@ body {
     font-size: 20px;
 }
 
+/*makes the nav bar components not an actual list as we dont want it to display that way*/
 .navbar ul {
     list-style-type: none;
 }
 
+/*inline block so it doesnt line downward and also gives padding so it doesnt spill over on screen*/
 .navbar ul li {
     display: inline-block;
     margin-left: 25px;
@@ -57,6 +65,8 @@ a {
     background-position: center;
 }
 
+
+/*makes it so that the content takes up 75% of the screen*/
 .content {
     width: 75%;
     display: inline-block;
@@ -67,6 +77,7 @@ a {
     max-height: 200px;
 }
 
+/*overall rules for header in the contents*/
 .content h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -77,17 +88,20 @@ p {
     font-size: 16px;
 }
 
+/*for interchanging image placement*/
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/*for interchanging image placement*/
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
-.search-engine-optimization {
+/*main rule for all div's in the main section of the body as it is uniform*/
+main div {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -96,24 +110,7 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
+/*rules for sidebar section similar to what we did above*/
 .sidebar {
     margin-right: 20px;
     padding: 20px;
@@ -125,39 +122,36 @@ p {
     background-color: #2589bd;
 }
 
+/*gen rule for sidebar headers*/
 .sidebar h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+
+/*makes the images line down and creates gen rule*/
 .sidebar img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.lead_gen {
+
+/*makes the article texts and rules to have white color*/
+section article {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.brand_aware {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.cost_mgmt {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.footer {
+/*separate rule for footer, has diff font, center alignment diff from body*/
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+/*only for footer's header*/
+footer h2 {
     font-size: 20px;
 }
